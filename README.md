@@ -21,6 +21,8 @@ key=value
   key2=value2
   #comment
 ```
+White lines will simplify be ignored
+
 Usage
 =====
 
