@@ -9,13 +9,17 @@ exports.use = function( filePath ){
   var properties = {};
   var file = fs.readFileSync(filePath,"utf-8");
   file.split("\n").forEach(function(line){
+
     var trimmedLine = line.trim();
-    if( trimmedLine.substring(0,1) !== "#" ){
-      var keyAndValue = trimmedLine.split("=");
-      var key = keyAndValue[0].trim();
-      var value = keyAndValue[1].trim();
-      properties[ key ] = value;
-    }
+    if( trimmedLine.substring(0,1) === "#" ) return;
+    if ( trimmedLine === "") return;
+
+    var keyAndValue = trimmedLine.split("=");
+    var key = keyAndValue[0].trim();
+    var value = keyAndValue[1].trim();
+
+    properties[ key ] = value;
+
   });
   loadedProperties[filePath]=properties;
   return properties;
