@@ -2,7 +2,7 @@
   "name": "nropf",
   "version": "0.0.0",
   "description": "A realy simple module to use property file as read-only map",
-  "main": "properties.js",
+  "main": "nropf.js",
   "scripts": {
     "test": "node test/test-properties.js"
   },

@@ -1,5 +1,5 @@
 var assert = require("assert");
-var properties = require("../properties.js").use(__dirname + "/dummy.properties");
+var properties = require("../nropf.js").use(__dirname + "/dummy.properties");
 
 //simple k,v
 assert.strictEqual( properties.key, "val", "the expected value for property key is val")

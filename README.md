@@ -25,7 +25,7 @@ Usage
 =====
 
 ```
-var properties = require("properties").use("myfile")
+var properties = require("nropf").use("myfile")
 properties.key
 ```
 
