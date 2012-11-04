@@ -1,6 +1,6 @@
 {
   "name": "nropf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A really simple module to use property file as read-only map",
   "main": "nropf.js",
   "scripts": {

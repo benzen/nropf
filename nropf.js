@@ -12,7 +12,9 @@ exports.use = function( filePath ){
     var trimmedLine = line.trim();
     if( trimmedLine.substring(0,1) !== "#" ){
       var keyAndValue = trimmedLine.split("=");
-      properties[ keyAndValue[0] ] = keyAndValue[1];
+      var key = keyAndValue[0].trim();
+      var value = keyAndValue[1].trim();
+      properties[ key ] = value;
     }
   });
   loadedProperties[filePath]=properties;
