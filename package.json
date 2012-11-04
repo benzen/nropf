@@ -1,0 +1,22 @@
+{
+  "name": "nropf",
+  "version": "0.0.0",
+  "description": "A realy simple module to use property file as read-only map",
+  "main": "properties.js",
+  "scripts": {
+    "test": "node test/test-properties.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benzen/nropf.git"
+  },
+  "keywords": [
+    "properties",
+    "file",
+    "read-only"
+  ],
+  "author": "Benjamin Dreux",
+  "email":"benjiiiiii@gmail.com",
+  "license": "BSD",
+  "readmeFilename": "README.md"
+}
