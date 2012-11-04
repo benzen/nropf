@@ -21,6 +21,13 @@ key=value
   key2=value2
   #comment
 ```
+Usage
+=====
+
+```
+var properties = require("properties").use("myfile")
+properties.key
+```
 
 NPM
 ===
