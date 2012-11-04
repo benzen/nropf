@@ -1,6 +1,11 @@
 fs = require("fs")
 
-exports.use = function(filePath){
+var loadedProperties = {};
+exports.use = function( filePath ){
+  if( loadedProperties[filePath] ){
+    return loadedProperties[filePath];
+  }
+
   var properties = {};
   var file = fs.readFileSync(filePath,"utf-8");
   file.split("\n").forEach(function(line){
@@ -10,5 +15,6 @@ exports.use = function(filePath){
       properties[ keyAndValue[0] ] = keyAndValue[1];
     }
   });
+  loadedProperties[filePath]=properties;
   return properties;
 }
