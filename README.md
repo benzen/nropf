@@ -13,7 +13,7 @@ The simplest way to use it is a key value pair separated by '='
 key=value
 ```
  You could also use comment inside the file
- ```
+```
  # this is a comment
 ```
  If the line start with white space, it will be ignored
