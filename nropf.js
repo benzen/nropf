@@ -16,7 +16,7 @@ exports.use = function( filePath ){
 
     var keyAndValue = trimmedLine.split("=");
     var key = keyAndValue[0].trim();
-    var value = keyAndValue[1].trim();
+    var value = keyAndValue.slice(1).join("=").trim();
 
     properties[ key ] = value;
 
